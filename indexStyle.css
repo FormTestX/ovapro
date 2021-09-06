@@ -1,0 +1,123 @@
+body {
+	font-family: Arial;
+	background-color: #505250;
+	color: whitesmoke;
+	margin: 0;
+	padding: 0;
+}
+
+.fix {
+	height: 47px;
+	border: 1px solid white;
+	z-index: 3;
+}
+
+.nav {
+	color: whitesmoke;
+	text-decoration: none;
+	user-select: none;
+	text-align: right;
+	margin-right: 15px;
+	display: inline;
+	height: 100%;
+	transition: all 0.5s;
+}
+
+.nav:hover {
+	color: #587d8a;
+	margin-right: 17px;
+	border-right: 4px solid #587d8a;
+	padding-right: 5px;
+	transition: all 0.5s;
+}
+
+#navt {
+	margin-left: 10px;
+	color: white;
+	text-align: left;
+	display: inline;
+	user-select: none;
+}
+
+#nav {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 20px;
+}
+
+#navList {
+	text-align: right;
+	display: inline-block;
+	position: fixed;
+	right: 0;
+}
+
+.intro {
+	font-size: 40px;
+	font-weight: bold;
+	background-color: #824949;
+	padding: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 90%;
+}
+
+.intro > p {
+	display: inline;
+}
+
+.target {
+	display: inline;
+	text-align: right;
+	margin-right: 0;
+}
+
+#motto {
+	padding: 5px 20px;
+	border-radius: 7px;
+	background-color: #c9ab57;
+	color: ghostwhite;
+	border: none;
+	display: block;
+	font-size: 25px;
+	cursor: pointer;
+	user-select: none;
+	margin: 0;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+#motto:hover {
+	background-color: #ad9144;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	color: #454545;
+	border-bottom: 4px solid #454545;
+	transition: border-bottom 6s;
+	transition: all 0.5s;
+}
+
+#clock {
+	background-color: #404040;
+	opacity: 60%;
+	width: fit-content;
+	padding: 15px;
+	border-radius: 8px;
+	font-family: monospace;
+}
+
+@media screen and (max-width 768px) {
+
+	.intro > p {
+		display: block;
+		margin-top: 40px;
+}
+	.target {
+		display: block;
+		text-align: center;
+		margin: 0;
+}
+
+}
