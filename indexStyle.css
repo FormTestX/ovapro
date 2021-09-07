@@ -6,10 +6,20 @@ body {
 	padding: 0;
 }
 
+a {
+	color: white;
+	transition: all 0.3s;
+}
+
+a:hover {
+	color: blue;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
 .fix {
 	height: 47px;
 	border: 1px solid white;
-	z-index: 3;
 }
 
 .nav {
@@ -108,16 +118,51 @@ body {
 	font-family: monospace;
 }
 
-@media screen and (max-width 768px) {
-
-	.intro > p {
-		display: block;
-		margin-top: 40px;
+#clock {
+	user-select: none;
 }
+
+.alert {
+  padding: 20px;
+  background-color: #61abc2;
+  color: white;
+  width: 97%;
+  border-radius: 9px;
+  margin-top: 13px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+@media screen and (max-width 600px) {
+
+.intro {
+	font-size: 40px;
+	font-weight: bold;
+	background-color: #824949;
+	padding: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 90%;
+	display: block;
+}
+
 	.target {
-		display: block;
 		text-align: center;
 		margin: 0;
+		display: block;
 }
 
 }
