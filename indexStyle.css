@@ -77,9 +77,12 @@ a:hover {
 
 .intro > p {
 	display: inline;
+	line-height: 10%;
 }
 
 .target {
+	display: flex;
+	justify-content: right;
 	display: inline;
 	text-align: right;
 	margin-right: 0;
@@ -126,7 +129,6 @@ a:hover {
   padding: 20px;
   background-color: #61abc2;
   color: white;
-  width: 97%;
   border-radius: 9px;
   margin-top: 13px;
 }
@@ -146,7 +148,7 @@ a:hover {
   color: black;
 }
 
-@media screen and (max-width 600px) {
+@media screen and (max-width: 1080px) {
 
 .intro {
 	font-size: 40px;
@@ -160,9 +162,12 @@ a:hover {
 }
 
 	.target {
-		text-align: center;
-		margin: 0;
-		display: block;
+		
+		display: flex;
+		justify-content: center;
+		height: 120px;
+		margin-top: -10px;
+		margin-bottom: 10px;
 }
 
 }
